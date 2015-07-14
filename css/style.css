@@ -1,0 +1,193 @@
+/*
+
+Coding      : Marouane ADNANE
+Email       : Admarouane@gmail.com
+url         : www.bewiv.com 
+Description : Responsive e learning web site (Front end)
+
+*/
+
+/* GLOBALES */
+
+li { list-style-type:none;}
+::selection { background: #fe6500; color: #FFFFFF; text-shadow: 0; }
+::-moz-selection { background: #fe6500; color: #FFFFFF; }
+a{ text-decoration: none; list-style: none;}
+
+/********************************/
+/*            HEADER            */
+/********************************/
+
+/*** Bar header ***/
+header #bg_bar_header{ background-color: #fe6500; color: #fff; height: 30px;}
+header .navbar { margin-bottom: 0px; }
+header .navbar-default { background-color: #fff; border: 0;}
+#login_bar ul{   margin: 5px;}
+#login_bar ul li{display: inline; list-style-type: none;}
+#login_bar ul li a{ font-size: 14px; font-weight: bold; text-decoration: none; color: #fff; text-transform: uppercase;}
+#login_bar ul li:last-child{ padding: 1px 5px 0px 5px; margin-left: 20px; border: solid 2px #fff; }
+
+/*** Menu ***/
+#logo_header img{height: 60px; margin-left: 25%;}
+#navbar li .fa{font-size: 32px; color: #56509f; padding: 10px;}
+#navbar .active a{ background-color: #fe6500;}
+#navbar .active .fa{color: #fff;}
+#navbar .active span{color: #fff;}
+#navbar li span{font-family:'Dosis', sans-serif; font-size: 18px; font-weight: bold; color: #56509f;margin: 5px; }
+@media screen and (max-width: 980px){ #logo_header img{height: 133%; margin-left: 25%;}}
+
+/********************************/
+/*            CONTENT           */
+/********************************/
+
+/*           SLIDER                
+---------------------------------*/
+
+/* Fade Bs-carousel  */
+.fade-carousel {position: relative; }
+.fade-carousel .carousel-indicators > li { margin: 0 2px; background-color: #f39c12; border-color: #f39c12; opacity: .7;}
+.fade-carousel .carousel-indicators > li.active { width: 10px; height: 10px; opacity: 1;}
+
+/* Hero Headers */
+.hero {position: absolute; top: 50%; left: 50%; z-index: 3; color: #fff; text-align: center; text-transform: uppercase; text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0); }
+.hero h1 { font-size: 6em; font-weight: bold; margin: 0; padding: 0; color: #56509f;}
+.fade-carousel .carousel-inner .item .hero { opacity: 0;
+                                            -webkit-transition: 2s all ease-in-out .1s;
+                                               -moz-transition: 2s all ease-in-out .1s; 
+                                                -ms-transition: 2s all ease-in-out .1s; 
+                                                 -o-transition: 2s all ease-in-out .1s; 
+                                                    transition: 2s all ease-in-out .1s; }
+.fade-carousel .carousel-inner .item.active .hero { opacity: 1;
+                                                    -webkit-transition: 2s all ease-in-out .1s;
+                                                       -moz-transition: 2s all ease-in-out .1s; 
+                                                        -ms-transition: 2s all ease-in-out .1s; 
+                                                         -o-transition: 2s all ease-in-out .1s; 
+                                                            transition: 2s all ease-in-out .1s; }
+
+/* Slides backgrounds */
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 { height: 430px; background-size: cover; background-position: center center; background-repeat: no-repeat; }
+.fade-carousel .slides .slide-1 { background-image: url(../images/slide1.jpg); }
+.fade-carousel .slides .slide-2 { background-image: url(../images/slide2.jpg); }
+.fade-carousel .slides .slide-3 { background-image: url(../images/slide3.jpg); }
+
+/* TABLETTE PHONE */
+@media screen and (min-width: 980px){ .hero { width: 980px; }}
+@media screen and (max-width: 640px){ .hero h1 { font-size: 4em; }}
+
+/*          BAR OF SEPARATION               
+---------------------------------*/
+.content .bar_separation .contenaire-fluid .row{ margin-right: 0px; margin-left: 0px; }
+.content .bar_separation .sentence h2{ line-height: 35px;}
+.content .bar_separation{ height: 70px; background-image: url(../images/pattern.png); font-family: 'Dosis', sans-serif; color: #fff;}
+.content .bar_separation .sentence_lien a{ line-height: 80px; text-decoration: none; color: #fff; font-size: 20px; border: 2px solid #fff; padding: 5px 15px 5px 15px; text-transform: uppercase;}
+@media screen and (max-width: 980px){ .content .bar_separation{ height: 100%;}}
+
+/*          ROW ADVANTAGE               
+---------------------------------*/
+#advantage .row{ background-color: #f5f5f5; margin-right: 0px; margin-left: 0px; padding-bottom: 45px; border-bottom: 1px solid #e7e7e7; }
+#advantage .row .adv_icon { padding-top: 45px; }
+#advantage .row .adv_icon i.fa { color: #56509f; font-size: 70px; border: 1px solid #e7e7e7; border-radius: 100%; padding: 40px 50px; background-color: #fff;}
+#advantage .row .adv_icon i.fa:hover { color: #fff; background-color: #56509f; border: 1px solid #e7e7e7; font-size: 70px; border-radius: 100%; padding: 40px 50px;}
+#advantage .row .adv_title{color: #56509f; font-size: 24px; font-family: ; padding-top: 12px; font-weight: bold;}
+#advantage .row .adv_text{color: #56509f; font-size: 18px; font-family: ; padding-top: 15px;}
+
+/*          ROW INFORMATION               
+---------------------------------*/
+.information .title{color: #56509f; font-family:'Dosis', sans-serif; font-size: 36px;   padding-top: 40px;}
+.information .subtitle{color: #babac0; font-size: 18px; font-weight: bold; padding: 12px;}
+.information .subtitle span{ color: #fff; border-bottom: 6px solid #fe6500; padding: 0 90px 0 90px;}
+.information #more_information{ margin-top: 75px;} 
+.information #more_information .row{ margin-right: 0px; margin-left: 0px; padding-bottom: 30px;}
+.information #more_information .row i.fa{color: #fff; font-size: 50px; border: 1px solid #fe6500; padding: 12px; margin-top: 10px; background-color: #fe6500;}
+.information #more_information .row i.fa:hover{ background-color: #fff; color: #fe6500; border: 1px solid #fe6500; font-size: 50px; padding: 12px; margin-top: 10px;}
+.information #more_information .more_information_title{ color: #56509f; font-size: 20px; font-weight: bold; padding-bottom: 10px;}
+.information #more_information .more_information_text{ color: #56509f; font-family: 'Dosis', sans-serif; font-size: 18px;}
+.information #more_information .col-md-5{ margin-top: 25px;}
+.information #more_information .col-md-5 span{ color: #b4b3bb; font-size: 20px; font-weight: bold;}
+
+/*          ROW CLASSES               
+---------------------------------*/
+.class{ background-color: #f5f5f5;}
+.class .class_type{ margin-top: 33px; padding-bottom: 46px;}
+.class .row{ margin-right: 0px; margin-left: 0px;}
+.class .row .box{ color: #fff; background-color: #56509f;}
+.class .row .box .title{color: #fff; font-family: 'Dosis', sans-serif; font-size: 26px; font-weight: bold; padding-bottom: 30px;}
+.class .row .box .num_class{color: #fff; font-family: 'Dosis', sans-serif; font-size: 26px; font-weight: bold;}
+.class .row .box .cl{color: #a59fef; font-family: 'Dosis', sans-serif; font-size: 18px; font-weight: bold; padding: 10px;}
+.class .row .img_cl{ padding-left: 0px; height: 189px;}
+.class .row .img_cl1{ background-image: url('../images/class1.jpg');}
+.class .row .img_cl2{ background-image: url('../images/class2.jpg');}
+
+/*          ROW LATEST COURS               
+---------------------------------*/
+.latest_c { margin-bottom: 30px;}
+.latest_c .container .row{ border-bottom: 15px solid #f5f5f5; padding-bottom: 20px; }
+.latest_c .title{ font-size: 24px; font-family: 'Dosis', sans-serif; font-weight: bold; color: #56509f; margin-top: 20px; }
+.latest_c .pager li>a, #latest_c .pager li>span { color: #fff; background-color: #56509f;}
+.latest_c .pager li>a:hover, #latest_c .pager li>span:hover { color: #56509f; background-color: #fff;}
+.latest_c .carousel-inner{ padding-top: 30px; }
+
+/* Thumbnail Box */
+.latest_c h5 { color: orange; font-weight: bold; }
+.latest_c .thumbnail { display: block; margin-bottom: 20px; line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; border-radius: 0px; }
+  
+/* Carousel Control */
+.latest_c .control-box { text-align: right; width: 100%; }
+.latest_c .carousel-control{ background: #666; border: 0px; border-radius: 0px; display: inline-block; font-size: 34px; font-weight: 200; line-height: 18px; opacity: 0.5; padding: 4px 10px 0px; position: static; height: 30px; width: 15px; }
+
+/* Mobile */
+@media (max-width: 767px) { .page-header, .control-box { text-align: center; }}
+
+/*          ROW FOLLOWER               
+---------------------------------*/
+#follow{  position: absolute; width: 100%; height: 100%; z-index: 2; background-color: #fe6500; opacity: 0.4; }
+#follow { background-image: url('../images/follow.png'); height: 350px; background-size:cover; }
+#follow p{ font-size: 22px; padding: 35px; }
+#follow h1{ padding: 35px 0 0 0; }
+#follow h1, #follow p{ color: #fff; font-family: 'Dosis', sans-serif; font-weight: bold; }
+
+/* FORM */
+#follow .input-group{ margin: auto;}
+#follow form{ padding-bottom: 30px; }
+#follow form .btn-info{ color: #fff; background-color: #56509f; width: 130px; }
+#follow form input {width: 360px; }
+#follow form input, #follow form .btn-info{border-radius: 0px; }
+
+/*          ROW CONTACT               
+---------------------------------*/
+.contact { position:relative; top: 350px; }
+.contact p{ color: #a6a2a2; font-size: 24px; font-family: 'Dosis', sans-serif; font-style: italic; padding-top: 5px; }
+.contact .latest_c .title{ border-bottom: 15px solid #f5f5f5; padding-bottom: 20px; }
+.contact .input-group{ margin-bottom: 20px ;}
+/* FORM */
+.contact form{ padding-top: 60px; }
+.contact .input-group-addon, .contact .form-control{ border-radius: 0px;}
+.contact .main-btn{color: #fff; background-color: #56509f; border-radius: 0px; font-family:'Dosis', sans-serif; }
+.contact .main-btn:hover{ border: 1px solid #56509f; color: #56509f; background-color: #fff; border-radius: 0px; font-family:'Dosis', sans-serif; }
+
+/********************************/
+/*            FOOTER            */
+/********************************/
+
+footer .container-fluid{position: relative; top: 350px; background-image: url('../images/pattern.png'); }
+footer .container{ padding: 30px 0 60px 0; }
+footer .titre_footer{ color:#fff; font-size: 24px; font-weight: bold; font-family: 'Dosis', sans-serif;padding: 20px 0 30px 0; }
+footer p{font-size: 18px; padding: 15px 0 41px 0; color: #fff; }
+footer .at{padding-top: 16px; }
+footer span{ color: #fff; font-size: 18px; font-family: 'Dosis', sans-serif; font-weight: bold; }
+footer .enl{ padding: 10px; color: #d66e57; font-size: 24px; font-family: 'Dosis', sans-serif; }
+
+/*          ROW COPYRIGHT               
+---------------------------------*/
+.copy{ position: relative; top: 450px; }
+.copy li{ display: inline-block;}
+.copy li .fa{ margin-right: 5px; padding: 6px; font-size: 20px; color: #fff; border: 1px solid #fe6500; background-color: #fe6500; }
+.copy li .fa:hover{ margin-right: 5px; padding: 6px; font-size: 20px; color: #fff; border: 1px solid #56509f; background-color: #56509f; }
+.copy p{ font-family: 'Dosis', sans-serif; color: #a0a0a0;}
